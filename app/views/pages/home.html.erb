@@ -1,0 +1,21 @@
+<div class="jumbotron center">
+  <h1>Our Family Recipies Book</h1>
+  <h2>The best family recipe sharing app</h2>
+  <% if !logged_in? %>
+    <%= link_to "Sign up", signup_path, class: "btn btn-warning btn-lg" %>
+  <% end %>
+</div>
+
+      <!-- Three columns of text below the jumbotron -->
+<div class="row">
+  <div align="center">
+    <% @recipes.each do |recipe| %>
+      <div class="col-lg-4">
+        <%= image_tag recipe.recipeimage, class: "img-circle", width: '140', height: '140' %>
+        <h2><%= link_to recipe.name, recipe_path(recipe) %></h2>
+        <p><%= recipe.description %></p>
+      </div><!-- /.col-lg-4 -->
+    <% end %>
+  </div>
+</div><!-- /.row -->
+
