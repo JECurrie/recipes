@@ -42,7 +42,7 @@ gem 'will_paginate', '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 
 gem 'carrierwave', '~> 1.0'
-gem 'mini_magick', '~> 4.6', '>= 4.6.1'
+gem 'mini_magick', '~> 4.9'
 gem 'carrierwave-aws', '~> 1.1'
 gem 'dotenv-rails', '~> 2.2'
 
